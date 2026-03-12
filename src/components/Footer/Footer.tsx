@@ -115,14 +115,16 @@ const Footer = () => {
             <a href="#">Terms & Conditions</a>
             <a href="#">Privacy Policy</a>
           </div>
-          <span>By </span>
-          <a
-            href="https://www.haraaydesignstudio.com/"
-            target="_blank"
-            // rel="noopener noreferrer"
-          >
-            Haraay Design Studio
-          </a>
+          <span className={styles.credit}>
+            By{" "}
+            <a
+              href="https://www.haraaydesignstudio.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Haraay Design Studio
+            </a>
+          </span>
         </div>
       </div>
     </footer>

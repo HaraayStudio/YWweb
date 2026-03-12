@@ -24,11 +24,11 @@ const WhatsAppButton = () => {
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
           <path
-            fill="#fff"
+            fill="#FCC85F"
             d="M24 4C13 4 4 13 4 24c0 3.6 1 7 2.7 9.9L4 44l10.4-2.7C17.2 43 20.5 44 24 44c11 0 20-9 20-20S35 4 24 4z"
           />
           <path
-            fill="#25D366"
+            fill="#FCC85F"
             d="M24 6.4C14.3 6.4 6.4 14.3 6.4 24c0 3.4 1 6.6 2.6 9.3L7 41l7.9-2c2.6 1.4 5.6 2.2 8.7 2.2 9.7 0 17.6-7.9 17.6-17.6S33.7 6.4 24 6.4z"
           />
           <path
