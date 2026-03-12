@@ -1,0 +1,123 @@
+// src/components/WhatsAppButton/WhatsAppButton.scss
+
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  pointer-events: none; // let children handle events
+
+  * {
+    pointer-events: all;
+  }
+}
+
+.wa-tooltip {
+  background: #fff;
+  color: #1a1a2e;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 9px 16px;
+  border-radius: 20px 20px 4px 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(8px) scale(0.95);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  &--visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.wa-btn {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #25d366;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  animation: wa-pulse 2.4s ease-out infinite;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  &:hover {
+    transform: scale(1.12);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
+    animation: none;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+@keyframes wa-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+  }
+  60% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .wa-float {
+    bottom: 20px;
+    right: 16px;
+  }
+
+  .wa-btn {
+    width: 54px;
+    height: 54px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .wa-tooltip {
+    font-size: 0.82rem;
+    padding: 8px 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wa-float {
+    bottom: 14px;
+    right: 12px;
+  }
+
+  .wa-btn {
+    width: 48px;
+    height: 48px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

@@ -35,7 +35,7 @@ import BHOSALEGALAXY from "./pages/Projects/ProjectsPages/bhosaleGalaxy/ProjectP
 import BHOSALEICON from "./pages/Projects/ProjectsPages/bhosaleIcon/ProjectPage.jsx";
 import BESTATEAXIS from "./pages/Projects/ProjectsPages/bestateAxis/ProjectPage.jsx";
 import MANTRA360 from "./pages/Projects/ProjectsPages/mantra360/ProjectPage.jsx";
-
+import WhatsAppButton from "./components/WhatsAppButton.jsx";
 const queryClient = new QueryClient();
 
 const AnimatedRoutes = () => {
@@ -86,7 +86,8 @@ const AnimatedRoutes = () => {
 
         {/* 404 */}
         <Route path="*" element={<NotFound />} />
-      </Routes>
+      </Routes>{" "}
+      <WhatsAppButton />{" "}
     </AnimatePresence>
   );
 };

@@ -214,9 +214,13 @@ const Landing = () => {
   return (
     <PageTransition>
       <SEO
-        title="YW Architects | Global Architecture & Urban Intelligence Studio"
-        description="YW Architects is a global studio blending architecture and urban intelligence. Master planning, landscape architecture, interior design, and infrastructure."
-        keywords="architects, architecture, urban planning, interior design, landscape architecture, YW Architects, Pune"
+        title=" Architecture  Services | YW Architects – Design, Planning & Delivery
+Meta Description: YW Architects delivers end-to-end architectural services for commercial, government, and real estate clients. From concept design to construction administration, our architects shape built environments with precision and purpose.
+"
+        description="  YW Architects delivers end-to-end architectural services for commercial, government, and real estate clients. From concept design to construction administration, our architects shape built environments with precision and purpose.
+"
+        keywords=" architecture firm, commercial architecture, government architecture, architectural design services, building design India
+"
       />
 
       <main className={styles.mainPage}>

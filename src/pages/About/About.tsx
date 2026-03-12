@@ -5,6 +5,7 @@ import TEAM_IMG from "../../assets/CeoImg.jpeg";
 import BUILDING2_IMG from "../../assets/aboutProject2.jpeg";
 import logo from "../../assets/logo.png";
 import ShinyText from "../../components/ShinyText";
+import Teamcarousel from "./Teamcarousel.jsx";
 // ─── Placeholder images — replace with actual project assets ───────────────────
 // Hero: mountain landscape with group of people
 
@@ -195,6 +196,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+      <Teamcarousel />
     </main>
   );
 }
